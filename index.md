@@ -10,7 +10,6 @@ enddate: 2021-09-01        # machine-readable end date for the workshop in YYYY-
 instructor: ["Amanda Charbonneau", "Jordan Pedersen"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
 contact: ["jordan.pedersen@utoronto.ca","ms.chan@utoronto.ca"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 etherpad: https://pad.carpentries.org/2021-08-31-ttt-online        # optional: URL for the workshop Etherpad if there is one
-eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 locations:
   - venue: "Online"
     address: ""
@@ -26,26 +25,6 @@ locations:
   double quotation marks around the value, unless specified otherwise.
   And run 'tools/check' *before* committing to make sure that changes are good.
 -->
-
-<!--
-  EVENTBRITE
-
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
--->
-{% if page.eventbrite %}
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="248px"
-  scrolling="auto">
-</iframe>
-{% endif %}
-
-<h2 id="general">General Information</h2>
 
 <!--
   INTRODUCTION
@@ -140,7 +119,7 @@ attempt to provide them.
 
 <h3>Requirements</h3>
 
-Participants should bring a laptop that is Internet connected and has a
+Participants should use a laptop that is Internet connected and has a
 functioning browser. If you have it, a device for recording audio and video
 (mobile phones and laptops are OK) is useful as throughout the two days, we
 are going to record one another teaching in pairs or threes. It does not have
